@@ -1,0 +1,210 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;  
+}
+
+body {
+ font-family: 'Raleway', sans-serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 90%;
+    margin: 2% auto;
+    text-align: center;
+}
+
+ .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+} 
+
+ 
+[class*= "column-"] {
+    padding: 1em; 
+    float: left; 
+    background:rgb(243, 244, 245); 
+    outline: 1px solid royalblue; 
+    margin-right: 2%; /*Esto es el gutter */
+
+}
+
+/*Mobile First */
+
+.column-xs-3 { 
+    /* (12 / 12) * 100 */
+    width: 23.5%; 
+}
+
+.column-ms-3:last-child {
+    margin-right: 0;
+   }
+
+.column-xs-4 { 
+    /* (12 / 12) * 100 */
+    width: 32%;
+}
+
+
+.column-xs-6 { 
+    /* (12 / 12) * 100 */
+    width: 49%;
+}
+
+.column-xs-12 { 
+    /* (12 / 12) * 100 */
+    width: 100%;
+}
+
+/* Clases para el navbar */
+
+.container-flex {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+}
+.title { 
+  display: inline-block;
+}
+
+.menu i {
+ font-size: 1.75em;
+}
+
+/* Clases para el Hero */
+/* .hero-image {
+    max-width: 100%;
+    height: auto;
+}  */
+/* Clases para el Info */
+.contact-items {
+  list-style: none; 
+}
+
+/* Clases para el cards */
+/* .card-image {
+    max-width: 100%;
+    height: auto;
+} */
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .column-ms-3 {
+        /* (3 / 12) * 100 
+        100 - 6 = 94/4 = 23.5%  */
+        width: 23.5%; 
+    }
+    
+    .column-ms-3:last-child {
+     margin-right: 0;
+    }
+    
+    .column-ms-6 { 
+        /* (5 / 12) * 100  --> 49 * 2 = 98 */
+        width: 49%;
+    }
+    
+    .column-ms-6:last-child { 
+     margin-right: 0;
+    }
+    
+
+} 
+
+/* Desktop */
+
+@media (min-width: 992px) {
+ /* Las divisiones (gutters) son uno menos 
+que la cantidad de columns */
+
+.column-lg-1 {
+    /* (1 / 12) * 100 
+    100-22 = 78%12 = 6.5
+    */
+    /* width: 8.333333%; */
+    width: 6.5%;
+}
+
+.column-lg-1:last-child {
+ margin-right: 0;
+}
+
+.column-lg-2 {
+    /* (2 / 12) * 100 
+    100-10 = 90 / 6 = 15*/
+    width: 15%;
+}
+
+.column-lg-2:last-child {
+  margin-right:0;
+}
+
+.column-lg-3 {
+    /* (3 / 12) * 100 
+    100 - 6 = 94/4 = 23.5%  */
+    width: 23.5%; 
+}
+
+.column-lg-3:last-child {
+ margin-right: 0;
+}
+
+.column-lg-4 {
+    /* (4 / 12) * 100 
+        100 - 4 = 96  96/3 = 32%   */
+ width: 32%;
+}
+
+.column-lg-4:last-child {
+  margin-right: 0;
+}
+
+
+.column-lg-6 { 
+    /* (5 / 12) * 100  --> 49 * 2 = 98 */
+    width: 49%;
+}
+
+.column-lg-6:last-child { 
+ margin-right: 0;
+}
+
+.column-lg-8 { 
+    /* (5 / 12) * 100  --> 49 * 2 = 98 */
+    width: 66%;
+}
+.column-lg-9 { 
+    /* (9 / 12) * 100 */
+    width: 74.5%;
+}
+
+
+.column-lg-12 { 
+    /* (12 / 12) * 100 */
+    width: 100%;
+}
+
+.contact-items {
+    list-style: none; 
+    text-decoration: underline;
+    padding-bottom: 1.2em;
+  }
+
+  #info > div > div > div.column-xs-12{
+     height: 25vh; 
+  }
+
+  
+
+}
